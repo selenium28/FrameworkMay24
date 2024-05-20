@@ -1,5 +1,6 @@
 package test;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -24,6 +25,8 @@ public class TestCases extends SetupFile{
 		LandingPage objLandingPage = new LandingPage();
 		objLandingPage.clickLoginButton();
 		System.out.println("Landing page test run completed");
+//		Verification Point
+		Assert.assertEquals("GCR Shop", driver.getTitle());
 	}
 	
 	@Test (priority = 2)

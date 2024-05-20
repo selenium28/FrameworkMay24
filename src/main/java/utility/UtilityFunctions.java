@@ -23,5 +23,7 @@ public class UtilityFunctions extends SetupFile{
 		element.clear();
 		element.sendKeys(text);
 	}
+	
+	// To select a dropdown 3 methods
 
 }
